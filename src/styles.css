@@ -1,0 +1,222 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #003366;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.home {
+  text-align: center;
+  padding: 100px 20px 50px;
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+}
+
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.benefits {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.benefits h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.benefit-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.benefit-box {
+  background-color: #f0f0f0;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 8px;
+  width: calc(30% - 20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.benefit-box:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-box strong {
+  font-size: 22px;
+}
+
+.benefits p {
+  font-size: 18px;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d99;
+}
+
+/* About Page Styles */
+.about {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about h1,
+.about h2,
+.about h3 {
+  font-size: 36px; /* Increased font size for headings */
+  margin: 20px 0; /* Space around headings */
+  color: #003366; /* Consistent header color */
+}
+
+.about p {
+  font-size: 22px; /* Larger font size for paragraphs */
+  line-height: 1.6; /* Increased line height for better readability */
+  margin: 15px 0; /* Margin for spacing */
+}
+
+/* Sign-Up Page Styles */
+.signup {
+  background-color: white; /* White background for sign-up section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 40px auto; /* Centered section */
+  padding: 40px; /* Padding around content */
+  max-width: 600px; /* Max width for better readability */
+}
+
+.signup h1 {
+  font-size: 36px; /* Larger font size for headings */
+  color: #003366; /* Consistent header color */
+  text-align: center; /* Center text */
+}
+
+.signup label {
+  display: block; /* Block display for labels */
+  margin: 10px 0 5px; /* Spacing around labels */
+}
+
+.signup input,
+.signup textarea {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Padding for input fields */
+  margin: 10px 0; /* Margin for spacing */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 18px; /* Font size for input fields */
+}
+
+.signup button {
+  padding: 10px 20px; /* Padding for buttons */
+  background-color: #003366; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 20px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.signup button:hover {
+  background-color: #005580; /* Darker blue on hover */
+}
+
+/* Contact Us Page Styles */
+.contact-us {
+  background-color: white; /* White background for contact section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 40px auto; /* Centered section */
+  padding: 40px; /* Padding around content */
+  max-width: 600px; /* Max width for better readability */
+}
+
+.contact-us h1 {
+  font-size: 36px; /* Larger font size for headings */
+  color: #003366; /* Consistent header color */
+  text-align: center; /* Center text */
+}
+
+.contact-us label {
+  display: block; /* Block display for labels */
+  margin: 10px 0 5px; /* Spacing around labels */
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Padding for input fields */
+  margin: 10px 0; /* Margin for spacing */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 18px; /* Font size for input fields */
+}
+
+.contact-us button {
+  padding: 10px 20px; /* Padding for buttons */
+  background-color: #003366; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 20px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact-us button:hover {
+  background-color: #005580; /* Darker blue on hover */
+}

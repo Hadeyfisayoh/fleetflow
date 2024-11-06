@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-
+import "./styles.css";
 const Signup = () => {
   const [formData, setFormData] = useState({
     to_name: "FleetFlow Team",
@@ -40,47 +40,49 @@ const Signup = () => {
   };
 
   return (
-    <div className="signup">
-      <h1>Start With Us</h1>
-      <form onSubmit={handleSubmit}>
-        <label>Name:</label>
-        <input
-          type="text"
-          name="from_name"
-          value={formData.from_name}
-          onChange={handleChange}
-          required
-        />
+    <div className="content-section">
+      <div className="signup">
+        <h1>Start With Us</h1>
+        <form onSubmit={handleSubmit}>
+          <label>Name:</label>
+          <input
+            type="text"
+            name="from_name"
+            value={formData.from_name}
+            onChange={handleChange}
+            required
+          />
 
-        <label>Phone Number:</label>
-        <input
-          type="tel"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        />
+          <label>Phone Number:</label>
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
 
-        <label>Email:</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
 
-        <label>Type of Truck(s):</label>
-        <input
-          type="text"
-          name="truckType"
-          value={formData.truckType}
-          onChange={handleChange}
-          required
-        />
+          <label>Type of Truck(s):</label>
+          <input
+            type="text"
+            name="truckType"
+            value={formData.truckType}
+            onChange={handleChange}
+            required
+          />
 
-        <button type="submit">Submit</button>
-      </form>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
 };
